@@ -2,7 +2,110 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Signin</title>
+    <meta
+      name="description"
+      content="Mukozi enables you to access the most reliable househelps (maids) within Uganda"
+    />
+    <!-- Responsive meta tag -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- styling links and bootsrap -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.css" />
+    <title>Mukozi: Signin</title>
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../favicon/site.webmanifest" />
+
   </head>
-  <body></body>
+  <body>
+    <div class="container-fluid" style="width: 100vw;"></div>
+    <div class="row">
+      <div class="col-md-7" style="align-items: center; justify-content: center; display: flex; flex-direction: column; background-color: black; height: 100vh;">
+        <img src="../../assets/images/white mukozi.png" class="img-fluid" alt="Responsive image">
+        <p style="font-weight: bold; font-size: 3rem; color: white;">Mukozi <sup style="font-size: 0.5rem;">TM</sup></p>
+      </div>
+      <div class="col-md-5" style="align-items: center; justify-content: center; display: flex; flex-direction: column; height: 100vh;">
+        <form class="col-md-8">
+          <div class="form-group">
+            <label for="phoneinput">Phone number</label>
+            <input
+              type="tel"
+              maxlength="10"
+              class="form-control"
+              id="phoneinput"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+              placeholder="(+256)0700 000 000"
+            />
+            
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+            />
+          </div>
+          <div class="form-group form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1" style="font-size: 0.8rem;"
+              >Send me newsletters</label
+            >
+          </div>
+         
+          <a href="#" style="text-decoration: none; color: black; font-size: 0.8rem; display: block;">Sign up instead</a>
+          <button type="submit" class="btn btn-primary " style="background-color: black; border-color: black; border-radius: 3rem;">Login</button>
+         
+        </form>
+        <div id="footer" style="bottom: 10px; position: absolute; padding: 0px; margin: 0px; width: 100%; justify-content: center; align-items: center; display: flex; flex-direction: column;" >
+          <p style="font-size: 0.8rem; padding: 0px; margin: 0px;">All rights reserved &copy 2020</p>
+          <p style="font-size: 0.8rem;padding: 0px; margin: 0px;">Mukozi Co.</p>
+         </div>
+      </div>
+    </div>
+    </div>
+      
+    <!-- Ensure that the jQuery is called before the bootstrap. -->
+    <script src="../../js/bootstrap/jquery.js"></script>
+    <script src="../../js/bootstrap/bootstrap.js"></script>
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script async src="../../index.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+  </body>
 </html>
