@@ -1,3 +1,6 @@
+/**
+ * This contains all the Javascript logic for the project
+ */
 "use strict";
 
 console.log("Welcome to Mukozi, the web version");
@@ -16,8 +19,26 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+/**
+ * Sign in function
+ */
 let signin = () => {
-  console.log("Sign clicked");
+  console.log("Sign in clicked");
 };
 
+/**
+ * Sign up function
+ */
+let signup = () => {
+  console.log("Sign up clicked");
+};
+
+/**
+ * Reset in function
+ */
+let reset = () => {
+  console.log("Reset clicked");
+};
+
+//Bind all functions that are to be called
 $("#signin").bind("click", signin);
