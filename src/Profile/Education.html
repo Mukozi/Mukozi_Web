@@ -94,7 +94,7 @@
           </div>
           <form>
             <div class="form-row">
-              <div class="form-group col-md-4">
+              <div class="form-group col-md-6">
                 <label for="userregion">Region</label>
                 <select id="userregion" class="form-control">
                   <option selected>UCE : Senior Four</option>
@@ -105,62 +105,24 @@
                 </select>
               </div>
               <div class="form-group col-md-6">
-                <label for="surname">Surname</label>
+                <label for="score">Score</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="surname"
-                  placeholder="Doe"
+                  id="score"
+                  placeholder="10 Aggregates"
                 />
               </div>
             </div>
             <div class="form-group">
-              <label for="useremail">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="useremail"
-                placeholder="johndoe@example.com"
-              />
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="userdob">Date of Birth</label>
-                <input type="date" class="form-control" id="userdob" />
-              </div>
-              <div class="form-group col-md-6">
-                <label for="userphone">Telephone</label>
-                <input type="tel" class="form-control" id="userphone" />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="useraddress">Address</label>
-              <input
-                type="text"
-                class="form-control"
-                id="useraddress"
-                placeholder="village, subcounty, parish"
-              />
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-2">
-                <label for="usercity">City</label>
-                <input type="text" class="form-control" id="usercity" />
-              </div>
-              <div class="form-group col-md-6">
-                <label for="userdistrict">District</label>
-                <input type="text" class="form-control" id="userdistrict" />
-              </div>
-              <div class="form-group col-md-4">
-                <label for="userregion">Region</label>
-                <select id="userregion" class="form-control">
-                  <option selected>Choose...</option>
-                  <option value="western">Western</option>
-                  <option value="eastern">Eastern</option>
-                  <option value="central">Central</option>
-                  <option value="northern">Northern</option>
-                </select>
-              </div>
+              <label for="english_proficiency">English Proficiency</label>
+              <select id="english_proficiency" class="form-control">
+                <option value="western">Expert</option>
+                <option value="eastern">Professional</option>
+                <option value="eastern">Mid-level</option>
+                <option value="central" selected>Beginner</option>
+                <option value="northern">None</option>
+              </select>
             </div>
 
             <button
