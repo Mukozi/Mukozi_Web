@@ -4,6 +4,7 @@
 "use strict";
 
 console.log("Welcome to Mukozi, the web version");
+console.log(location.href);
 
 const firebaseConfig = {
   apiKey: "AIzaSyALIQGnWPyYu1WU-nDdSK6EiI1kXGlQaBw",
