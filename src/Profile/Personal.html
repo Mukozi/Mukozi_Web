@@ -38,27 +38,22 @@
     <link rel="manifest" href="../../favicon/site.webmanifest" />
   </head>
   <body>
-    <div class="container-fluid" style="width: 100vw; height: 100vh;">
-      <div
-        class="row"
-        style="position: absolute; top: 0px; height: 10vh; width: 100vw;  padding-left: 1rem; border-bottom: 1px solid black; margin-bottom: 2rem;"
-      >
-        <div style="height: 100%; display: flex; flex-direction: row;">
+    <div class="container-fluid div_body">
+      <!-- This the header part of the body -->
+      <div class="row content_header">
+        <div class="content_header_logo">
           <img
             src="../../assets/images/mukozi.png"
             class="img-fluid"
             alt="Mokozi Logo"
             style="height: 80%;"
           />
-          <p style="font-weight: bold; color: black; align-self: flex-end;">
-            Mukozi <sup style="font-size: 0.2rem;">TM</sup>
-          </p>
+          <p class="content_header_title">Mukozi <sup>TM</sup></p>
         </div>
       </div>
-      <div
-        class="row "
-        style="position: absolute; top: 10vh; height: 85vh; width: 100vw;"
-      >
+      <!-- This is the main content -->
+      <div class="row content_main">
+        <!-- This is the profile content -->
         <div class="col-ms-12 content_profile">
           <div class="profile_nav">
             <div class="col-md-3 profile_nav_tab profile_nav_tab_active">
@@ -160,20 +155,16 @@
             <div class="form_btn_next">
               <button
                 type="submit"
-                class="btn btn-primary "
-                style="background-color: black; border-color: black; border-radius: 3rem;"
+                class="btn btn-primary btn_next"
                 id="btn_nxt_educ"
               >
-                <a
-                  href="./Education.html"
-                  style="text-decoration: none; color: white;"
-                  >Next</a
-                >
+                <a href="./Education.html">Next</a>
               </button>
             </div>
           </form>
         </div>
       </div>
+      <!-- This is the footer content -->
       <div class="row profile_footer">
         <p>
           All rights reserved &copy 2020

@@ -1,3 +1,43 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.div_body {
+  width: 100vw;
+  height: 100vh;
+}
+.content_header {
+  position: absolute;
+  top: 0px;
+  height: 10vh;
+  width: 100vw;
+  padding-left: 1rem;
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+.content_header_logo {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.content_header_title {
+  font-weight: bold;
+  color: black;
+  align-self: flex-end;
+}
+
+.content_header_title sup {
+  font-size: 0.2rem;
+}
+
+.content_main {
+  position: absolute;
+  top: 10vh;
+  height: 85vh;
+  width: 100vw;
+}
+
 .content_profile {
   width: 70%;
   height: 100%;
@@ -67,6 +107,16 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.btn_next {
+  background-color: black;
+  border-color: black;
+  border-radius: 3rem;
+}
+.btn_next a {
+  text-decoration: none;
+  color: white;
 }
 
 .profile_footer {
