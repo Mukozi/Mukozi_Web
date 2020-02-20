@@ -14,6 +14,7 @@
 
     <!-- styling links and bootsrap -->
     <link rel="stylesheet" href="../../css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Mukozi: Profile</title>
 
     <!-- Favicons -->
@@ -37,62 +38,50 @@
     <link rel="manifest" href="../../favicon/site.webmanifest" />
   </head>
   <body>
-    <div class="container-fluid" style="width: 100vw; height: 100vh;">
-      <div
-        class="row"
-        style="position: absolute; top: 0px; height: 10vh; width: 100vw;  padding-left: 1rem; border-bottom: 1px solid black; margin-bottom: 2rem;"
-      >
-        <div style="height: 100%; display: flex; flex-direction: row;">
+    <div class="container-fluid div_body">
+      <!-- This the header part of the body -->
+      <div class="row content_header">
+        <div class="content_header_logo">
           <img
             src="../../assets/images/mukozi.png"
             class="img-fluid"
             alt="Mokozi Logo"
             style="height: 80%;"
           />
-          <p style="font-weight: bold; color: black; align-self: flex-end;">
-            Mukozi <sup style="font-size: 0.2rem;">TM</sup>
-          </p>
+          <p class="content_header_title">Mukozi <sup>TM</sup></p>
         </div>
       </div>
-      <div
-        class="row "
-        style="position: absolute; top: 10vh; height: 85vh; width: 100vw;"
-      >
-        <div class="col-md-1"></div>
-        <div class="col-ms-10">
-          <div class="row" style="height: 3rem;">
-            <div
-              class="col-md-3"
-              style="font-size: 0.8rem; font-weight: bold;background-color: black; color: white; border-right: 1px solid white;"
-            >
+      <!-- This is the main content -->
+      <div class="row content_main">
+        <div class="col-ms-12 content_profile">
+          <div class="profile_nav">
+            <div class="col-md-3 profile_nav_tab profile_nav_tab_inactive">
               Personal Information
             </div>
-            <div
-              class="col-md-3"
-              style="font-size: 0.8rem; font-weight: bold;background-color: black; color: white; border-right: 1px solid white;"
-            >
+            <div class="col-md-3 profile_nav_tab profile_nav_tab_inactive">
               Education Background
             </div>
-            <div
-              class="col-md-3"
-              style="font-size: 0.8rem; font-weight: bold;background-color: black; color: white;"
-            >
+            <div class="col-md-3 profile_nav_tab profile_nav_tab_active">
               Work Experience
             </div>
-            <div
-              class="col-md-2"
-              style="font-size: 0.8rem; font-weight: bold; color: black;"
-            >
+            <div class="col-md-3 profile_nav_tab profile_nav_tab_inactive">
               Verification
             </div>
-            <div
-              class="col-md-1"
-              style="font-size: 0.8rem; font-weight: bold; color: black;"
-            >
+            <div class="col-md-3 profile_nav_tab profile_nav_tab_inactive">
               Complete
             </div>
           </div>
-          <form>
+          <form class="profile_form" autocomplete="off">
+            <div class="profile_form_description">
+              <p>
+                Kindly fill the following fields about your Work Experience to
+                proceed with your registration
+              </p>
+              <p class="information_share">
+                *Your information shall not be shared with any other third
+                parties
+              </p>
+            </div>
             <label for="work_experience"
               >Do you have any work experience ?</label
             >
@@ -161,30 +150,25 @@
                 class="form-control"
               />
             </div>
-            <button
-              type="submit"
-              class="btn btn-primary "
-              style="background-color: black; border-color: black; border-radius: 3rem;"
-              id="btn_nxt_educ"
-            >
-              <a
-                href="./Verification.html"
-                style="text-decoration: none; color: white;"
-                >Next</a
+            <div class="form_btn_next">
+              <button
+                type="submit"
+                class="btn btn-primary btn_next"
+                id="btn_nxt_veri"
               >
-            </button>
+                <a href="./Verification.html">Next</a>
+              </button>
+            </div>
           </form>
         </div>
         <div class="col-md-1"></div>
       </div>
-      <div
-        class="row "
-        style="position: absolute; bottom: 0px; height: 5vh; display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100vw;"
-      >
-        <p style="font-size: 0.8rem; padding: 0px; margin: 0px;">
+      <!-- This is the footer content -->
+      <div class="row profile_footer">
+        <p>
           All rights reserved &copy 2020
         </p>
-        <p style="font-size: 0.8rem;padding: 0px; margin: 0px;">Mukozi Co.</p>
+        <p>Mukozi Co.</p>
       </div>
     </div>
 
