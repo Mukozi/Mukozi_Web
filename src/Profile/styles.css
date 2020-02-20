@@ -107,6 +107,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  position: relative;
+  bottom: 0px;
+  right: 0px;
 }
 
 .btn_next {
