@@ -122,6 +122,21 @@ body {
   color: white;
 }
 
+.profile_verification {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.profile_verification p {
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
 .profile_footer {
   position: absolute;
   bottom: 0px;
