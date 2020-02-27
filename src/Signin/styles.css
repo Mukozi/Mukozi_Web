@@ -1,0 +1,72 @@
+body {
+  font-size: 0.8rem;
+}
+
+.authsidebars {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.authsidebars_brand {
+  background-color: black;
+}
+
+.authsidebars_footer {
+  width: 100%;
+  margin: 0px;
+  bottom: 10px;
+  padding: 0px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.authsidebars_footer p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.btn_next {
+  margin-top: 40px;
+  margin-bottom: 8px;
+  border-radius: 3rem;
+  border-color: black;
+  background-color: black;
+}
+
+.btn_next a {
+  color: white;
+  text-decoration: none;
+}
+
+.link_next,
+.link_next:hover,
+.link_next:visited {
+  color: black;
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+
+.auth_form {
+  margin-top: 15rem;
+}
+
+#form_btn_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form_btn_group label {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+form label {
+  font-weight: bold;
+}
