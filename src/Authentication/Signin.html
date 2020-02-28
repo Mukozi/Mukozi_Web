@@ -14,6 +14,7 @@
 
     <!-- styling links and bootsrap -->
     <link rel="stylesheet" href="../../css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Mukozi: Signin</title>
 
     <!-- Favicons -->
@@ -35,19 +36,18 @@
       href="../../favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="../../favicon/site.webmanifest" />
-
   </head>
   <body>
     <div class="container-fluid" style="width: 100vw;"></div>
     <div class="row" style="height: 100%; width:100%;">
-      <div class="col-md-7" style="align-items: center; justify-content: center; display: flex; flex-direction: column; background-color: black; height: 100vh;">
-        <img src="../../assets/images/white mukozi.png" class="img-fluid" alt="Responsive image" >
-        <p style="font-weight: bold; font-size: 3rem; color: white;">Mukozi <sup style="font-size: 0.5rem;">TM</sup></p>
-      </div>
-      <div class="col-md-5" style="align-items: center; justify-content: center; display: flex; flex-direction: column; height: 100vh;">
-        <form class="col-md-8">
-          <div class="form-group" style="margin-right: 40px;">
-            <label for="phoneinput" style="font-weight: bold; margin-top: 50px;">Phone number</label>
+      <!-- The sidebar with the image -->
+      <div class="col-md-7 sidebar"></div>
+
+      <!-- The sidebar with the form -->
+      <div class="col-md-5 authsidebars">
+        <form class="col-md-8 auth_form">
+          <div class="form-group">
+            <label for="phoneinput">Phone number</label>
             <input
               type="tel"
               maxlength="10"
@@ -58,10 +58,9 @@
               required
               style="border-width: 6px bold solid;"
             />
-            
           </div>
-          <div class="form-group" style="margin-right: 40px;">
-            <label for="password" style="font-weight: bold;">Password</label>
+          <div class="form-group">
+            <label for="password">Password</label>
             <input
               type="password"
               class="form-control form-control-sm"
@@ -69,30 +68,29 @@
               placeholder="************"
             />
           </div>
-          <div style="display: flex; flex-direction: column; align-items: center;">
+          <!-- The submit button groups -->
+          <div id="form_btn_group">
             <div class="form-group form-check">
               <input
                 type="checkbox"
                 class="form-check-input"
                 id="exampleCheck1"
               />
-              <label class="form-check-label" for="exampleCheck1" style="font-size: 0.7rem;"
-                ><b>Send me newsletters</b></label
-              >
+              <label class="form-check-label" for="exampleCheck1">
+                Send me newsletters
+              </label>
             </div>
-            <a href="./../Signup/Signup.html" style="text-decoration: none; color: black; font-size: 0.7rem;">Sign up instead</a>
-            <button type="submit" class="btn btn-primary" style="background-color: black; margin-bottom: 8px; margin-top: 40px; border-color: black; border-radius: 3rem;"><a href="./../Dashboard/index.html" style="color: white; text-decoration: none;">Login</a></button>
+            <a href="./Signup.html" class="link_next">Sign up instead</a>
+            <button type="submit" class="btn btn-primary btn_next">
+              <a href="./../Dashboard/index.html">Login</a>
+            </button>
           </div>
-          
         </form>
-        <div id="footer" style="bottom: 10px; position: absolute; padding: 0px; margin: 0px; width: 100%; justify-content: center; align-items: center; display: flex; flex-direction: column;" >
-          <p style="font-size: 0.8rem; padding: 0px; margin: 0px;">All rights reserved &copy 2020</p>
-          <p style="font-size: 0.8rem;padding: 0px; margin: 0px;">Mukozi Co.</p>
-         </div>
+        <!-- The sidebars footer -->
+        <div class="authfooter" style="width: 100%;"></div>
       </div>
     </div>
-    </div>
-      
+
     <!-- Ensure that the jQuery is called before the bootstrap. -->
     <script src="../../js/bootstrap/jquery.js"></script>
     <script src="../../js/bootstrap/bootstrap.js"></script>
@@ -109,7 +107,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
 
     <!-- Initialize Firebase -->
-    <script async src="../../index.js"></script>
+    <script async src="../../js/index.js"></script>
+    <script src="./index.js"></script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>
   </body>
 </html>

@@ -14,7 +14,7 @@
 
     <!-- styling links and bootsrap -->
     <link rel="stylesheet" href="../../css/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./../../css/styles.css" />
     <title>Mukozi: Profile</title>
 
     <!-- Favicons -->
@@ -40,38 +40,12 @@
   <body>
     <div class="container-fluid div_body">
       <!-- This the header part of the body -->
-      <div class="row content_header">
-        <div class="content_header_logo">
-          <img
-            src="../../assets/images/mukozi.png"
-            class="img-fluid"
-            alt="Mokozi Logo"
-            style="height: 80%;"
-          />
-          <p class="content_header_title">Mukozi <sup>TM</sup></p>
-        </div>
-      </div>
+      <div class="theheader"></div>
       <!-- This is the main content -->
       <div class="row content_main">
         <!-- This is the profile content -->
         <div class="col-ms-12 content_profile">
-          <div class="profile_nav">
-            <div class="col-md-3 profile_nav_tab profile_nav_tab_inactive">
-              Personal Information
-            </div>
-            <div class="col-md-3 profile_nav_tab profile_nav_tab_active">
-              Education Background
-            </div>
-            <div class="col-md-3 profile_nav_tab profile_nav_tab_inactive">
-              Work Experience
-            </div>
-            <div class="col-md-3 profile_nav_tab profile_nav_tab_inactive">
-              Verification
-            </div>
-            <div class="col-md-3 profile_nav_tab profile_nav_tab_inactive">
-              Complete
-            </div>
-          </div>
+          <div class="profile_nav"></div>
           <form class="profile_form" autocomplete="off">
             <div class="profile_form_description">
               <p>
@@ -136,13 +110,8 @@
           </form>
         </div>
       </div>
-      <!-- This is the footer content -->
-      <div class="row profile_footer">
-        <p>
-          All rights reserved &copy 2020
-        </p>
-        <p>Mukozi Co.</p>
-      </div>
+      <!-- The footer section -->
+      <div class="thefooter"></div>
     </div>
 
     <!-- Ensure that the jQuery is called before the bootstrap. -->
@@ -161,7 +130,9 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
 
     <!-- Initialize Firebase -->
-    <script async src="../../index.js"></script>
+    <script async src="../../js/index.js"></script>
+    <!-- Load the headers and footers -->
+    <script src="./profile.js"></script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>
   </body>
 </html>
