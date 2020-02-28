@@ -2,6 +2,13 @@ body {
   font-size: 0.8rem;
 }
 
+.commons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .authsidebars {
   height: 100vh;
   width: 100%;
@@ -100,3 +107,5 @@ form p {
   width: 20rem;
   height: 20rem;
 }
+
+/* Verify html css */
