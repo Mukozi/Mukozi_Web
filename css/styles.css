@@ -13,6 +13,8 @@ body {
 .div_body {
   width: 100vw;
   height: 100vh;
+  padding: 0px;
+  margin: 0px;
 }
 .content_header {
   position: absolute;
@@ -164,4 +166,10 @@ body {
   margin: 0px;
 }
 
+
 /* Rembos css for the  landing page */
+
+
+
+/* The authentication styling */
+

@@ -14,8 +14,8 @@
 
     <!-- styling links and bootsrap -->
     <link rel="stylesheet" href="../../css/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./styles.css">
-    <title>Mukozi: Signin</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Mukozi: Sign up</title>
 
     <!-- Favicons -->
     <link
@@ -36,15 +36,12 @@
       href="../../favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="../../favicon/site.webmanifest" />
-
   </head>
   <body>
     <div class="container-fluid" style="width: 100vw;"></div>
     <div class="row" style="height: 100%; width:100%;">
       <!-- The sidebar with the image -->
-      <div class="col-md-7 authsidebars authsidebars_brand" >
-        <img src="../../assets/images/official_white_mukozi.png" class="img-fluid" alt="Responsive image" >
-      </div>
+      <div class="col-md-7 sidebar"></div>
       <!-- The sidebar with the form -->
       <div class="col-md-5 authsidebars">
         <form class="col-md-8 auth_form">
@@ -53,51 +50,91 @@
             <input
               type="tel"
               maxlength="10"
-              class="form-control form-control-sm"
+              class="form-control"
               id="phoneinput"
-              pattern="[0]{1}[7]{1}[0-9]{2}[0-9]{3}[0-9]{3}"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
               placeholder="07********"
-              required
               style="border-width: 6px bold solid;"
             />
-            
           </div>
           <div class="form-group">
             <label for="password">Password</label>
             <input
               type="password"
-              class="form-control form-control-sm"
+              class="form-control"
               id="password"
               placeholder="************"
             />
           </div>
-          <!-- The submit button groups -->
-          <div id="form_btn_group">
-            <div class="form-group form-check">
+
+          <div style="justify-content: center;">
+            <div class="form-group form-check form-check-inline">
               <input
-                type="checkbox"
                 class="form-check-input"
-                id="exampleCheck1"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="maid"
+                checked
               />
-              <label class="form-check-label" for="exampleCheck1">
-                Send me newsletters
-              </label
+              <label
+                class="form-check-label"
+                for="inlineRadio1"
+                style="font-size: 0.7rem;"
+                >House help</label
               >
             </div>
-            <a href="./../Signup/Signup.html"  class="link_next">Sign up instead</a>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio2"
+                value="homeowner"
+              />
+              <label
+                class="form-check-label"
+                for="inlineRadio2"
+                style="font-size: 0.7rem;"
+                >Home Owner</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio3"
+                value="admin"
+                disabled
+              />
+              <label
+                class="form-check-label"
+                for="inlineRadio3"
+                style="font-size: 0.7rem;"
+                >Admin</label
+              >
+            </div>
+          </div>
+
+          <div id="form_btn_group">
+            <a href="./Signin.html" class="link_next"
+              >Already have an account?, Login instead</a
+            >
             <button type="submit" class="btn btn-primary btn_next">
-              <a href="./../Dashboard/index.html">Login</a>
+              <a
+                href="./../Profile/Personal.html"
+                style="color: white; text-decoration: none;"
+                >Sign up</a
+              >
             </button>
-          </div>  
+          </div>
         </form>
-        <div id="footer" class="authsidebars_footer" >
-          <p >All rights reserved &copy 2020</p>
-          <p>Mukozi Co.</p>
-         </div>
+        <!-- The sidebars footer -->
+        <div class="authfooter" style="width: 100%;"></div>
       </div>
     </div>
-    </div>
-      
+
     <!-- Ensure that the jQuery is called before the bootstrap. -->
     <script src="../../js/bootstrap/jquery.js"></script>
     <script src="../../js/bootstrap/bootstrap.js"></script>
@@ -114,7 +151,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
 
     <!-- Initialize Firebase -->
-    <script async src="../../index.js"></script>
+    <script async src="./../../js/index.js"></script>
+    <script src="./index.js"></script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>
   </body>
 </html>
