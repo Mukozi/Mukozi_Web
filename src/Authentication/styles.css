@@ -4,6 +4,7 @@ body {
 
 .authsidebars {
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,6 +68,35 @@ body {
   font-weight: bold;
 }
 
-form label {
+form p {
   font-weight: bold;
+}
+
+.authsiders_social {
+  color: #fff;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.authsiders_social a {
+  flex-direction: row;
+  margin-left: 1rem;
+  display: flex;
+  width: 5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.auth_social_image {
+  width: 1rem;
+  height: 1rem;
+}
+
+.auth_logo_mukozi {
+  width: 20rem;
+  height: 20rem;
 }

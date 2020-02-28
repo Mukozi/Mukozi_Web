@@ -14,8 +14,8 @@
 
     <!-- styling links and bootsrap -->
     <link rel="stylesheet" href="../../css/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./../../css/styles.css" />
-    <title>Mukozi: Profile</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Mukozi: Signin</title>
 
     <!-- Favicons -->
     <link
@@ -38,37 +38,57 @@
     <link rel="manifest" href="../../favicon/site.webmanifest" />
   </head>
   <body>
-    <div class="container-fluid div_body">
-      <!-- This the header part of the body -->
-      <div class="theheader"></div>
-      <!-- This is the main content -->
-      <div class="row content_main">
-        <div class="col-ms-12 content_profile">
-          <div class="profile_nav"></div>
-          <div class="profile_verification">
-            <img
-              src="./../../assets/images/success.png"
-              alt="sucessful submitted"
-              title="Data sucessfully submitted"
+    <div class="container-fluid" style="width: 100vw;"></div>
+    <div class="row" style="height: 100%; width:100%;">
+      <!-- The sidebar with the image -->
+      <div class="col-md-7 sidebar"></div>
+
+      <!-- The sidebar with the form -->
+      <div class="col-md-5 authsidebars">
+        <form class="col-md-8 auth_form">
+          <div class="form-group">
+            <label for="phoneinput">Phone number</label>
+            <input
+              type="tel"
+              maxlength="10"
+              class="form-control form-control-sm"
+              id="phoneinput"
+              pattern="[0]{1}[7]{1}[0-9]{2}[0-9]{3}[0-9]{3}"
+              placeholder="07********"
+              required
+              style="border-width: 6px bold solid;"
             />
-            <p>
-              You have submitted your Information. Awaiting Verification and
-              approval.
-            </p>
-            <div class="form_btn_next" style="margin-top: 2rem;">
-              <button
-                type="submit"
-                class="btn btn-primary btn_next"
-                id="btn_nxt_dash"
-              >
-                <a href="../Dashboard/index.html">Proceed to Dashboard</a>
-              </button>
-            </div>
           </div>
-        </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control form-control-sm"
+              id="password"
+              placeholder="************"
+            />
+          </div>
+          <!-- The submit button groups -->
+          <div id="form_btn_group">
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1">
+                Send me newsletters
+              </label>
+            </div>
+            <a href="./Signup.html" class="link_next">Sign up instead</a>
+            <button type="submit" class="btn btn-primary btn_next">
+              <a href="./../Dashboard/index.html">Login</a>
+            </button>
+          </div>
+        </form>
+        <!-- The sidebars footer -->
+        <div class="authfooter" style="width: 100%;"></div>
       </div>
-      <!-- The footer section -->
-      <div class="thefooter" style="width: 100%;"></div>
     </div>
 
     <!-- Ensure that the jQuery is called before the bootstrap. -->
@@ -87,9 +107,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
 
     <!-- Initialize Firebase -->
-    <script async src="./../../js/index.js"></script>
-    <!-- Load the headers and footers -->
-    <script src="./profile.js"></script>
+    <script async src="../../js/index.js"></script>
+    <script src="./index.js"></script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>
   </body>
 </html>
