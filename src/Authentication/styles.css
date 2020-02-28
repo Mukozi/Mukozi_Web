@@ -109,3 +109,15 @@ form p {
 }
 
 /* Verify html css */
+.div_codes {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+.code_inputs {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  border-radius: 8px;
+  text-align: center;
+}
