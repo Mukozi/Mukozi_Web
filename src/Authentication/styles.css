@@ -4,6 +4,7 @@ body {
 
 .authsidebars {
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,4 +70,21 @@ body {
 
 form label {
   font-weight: bold;
+}
+
+.authsiders_social {
+  color: #fff;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.authsiders_social div {
+  flex-direction: row;
+  margin-left: 1rem;
+  display: flex;
+  width: 5rem;
 }
