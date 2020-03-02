@@ -170,12 +170,19 @@ body {
 /* Rembos css for the  landing page */
 body {
   background: #fff;
-  color: #000;
   font-family: "Roboto", Sans-serif;
   font-size: 0.8rem;
   font-weight: 300;
-  color: #06010f;
+  color: #021f54;
   line-height: 1.6em;
+}
+@font-face {
+  font-family: myFont;
+  src: url(./font/lato/Lato-Light.ttf);
+}
+
+div {
+  font-family: myFont;
 }
 
 .container {
@@ -203,20 +210,20 @@ h6 {
 }
 #top-section-right {
   background-color: rgba(255, 255, 255, 0);
-  background-image: url("../../assets/images/housmaid.jpg");
+  background-image: url("../../assets/images/housemaid.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .top-section {
   color: #fff;
-  font-family: "Roboto", Sans-serif;
+  font-family: myFont;
   font-size: 30px;
   font-weight: 600;
   text-transform: capitalize;
 }
 .top-section-pitch {
-  color: #06010f;
+  color: #021f54;
   font-size: 18px;
   font-weight: 300;
 }
@@ -234,7 +241,7 @@ h6 {
   justify-content: center;
   margin-right: auto;
   box-sizing: border-box;
-  color: #479365;
+  color: #23a455;
 }
 .custom h3 {
   margin-bottom: 10px;
@@ -260,6 +267,7 @@ hr {
   display: inline-block;
   box-sizing: border-box;
   font-size: 0.9rem;
+  color: #021f54;
   line-height: 1.3em;
   padding: 4px;
 }
@@ -273,7 +281,7 @@ hr {
 }
 .img-box-title {
   color: #23a455;
-  font-family: "Roboto", Sans-serif;
+  font-family: myFont;
   font-size: 20px;
   font-weight: 500;
 }
@@ -294,7 +302,7 @@ hr {
 }
 .wrapper-box-title{
   color: #23a455;
-  font-family: "Roboto", Sans-serif;
+  font-family: myFont;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
@@ -311,6 +319,13 @@ hr {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
+}
+.start-btn a{
+  text-decoration: none;
+  color: #fff;
+}
+.start-btn a:visited{
+  color: #fff;
 }
 .testimonial-box{
   display: inline-block;
