@@ -237,11 +237,16 @@
           </div>
           <div class="form-row">
             <div class="col">
-              <form>
+              <form class="contact-form">
                 <div class="form-group">
-                  <textarea class="form-control" value="Type your message here">
-                    
-                  </textarea>
+                  <div class="txtarea">
+                    <textarea class="form-control" rows="4" placeholder="Write message here..."></textarea>
+                  </div>
+                  <div class="form-group form-inline">
+                    <input class="form-control" type="email" id="email" placeholder="Enter email" name="email">
+                    <input class="form-control" type="text" id="name" placeholder="Full Name" name="name">
+                    <button class="form-control" type="submit">Send</button>
+                  </div>
                 </div>
               </form>
             </div>

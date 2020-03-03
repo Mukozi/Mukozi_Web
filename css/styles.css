@@ -346,6 +346,32 @@ hr {
   margin-bottom: 5px;
 }
 
+/********* Contact Form ************/
+
+.contact-form{
+  margin: 0 auto;
+  width: 750px;
+  border: 1px solid green;
+  height: auto;
+  padding: 5px;
+}
+.txtarea {  
+  width: 700px;
+  padding: 2px;
+}
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 8px;
+}
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
 
 /************* Footer **********/
 #bottom {
@@ -411,7 +437,7 @@ hr {
   margin-left: 15px;
 }
 
-/******** Forms *************************/
+/******** Forms ************************
 #contact-page {
   padding-top: 0;
   background: #fff;
@@ -467,7 +493,7 @@ input[type="submit"]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-}
+}*/
 
 .dashboard_footer {
   background-color: #000;
