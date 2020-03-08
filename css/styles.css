@@ -16,14 +16,13 @@ body {
   padding: 0px;
   margin: 0px;
 }
+
+/* The header of the pages */
 .content_header {
-  position: absolute;
-  top: 0px;
   height: 10vh;
   width: 100vw;
   padding-left: 1rem;
   border-bottom: 1px solid black;
-  margin-bottom: 2rem;
 }
 
 .content_header_logo {
@@ -41,9 +40,9 @@ body {
   font-size: 0.2rem;
 }
 
+/* The main content body */
+
 .content_main {
-  position: absolute;
-  top: 10vh;
   height: 85vh;
   width: 100vw;
 }
@@ -148,8 +147,6 @@ body {
 }
 
 .profile_footer {
-  position: absolute;
-  bottom: 0px;
   height: 5vh;
   width: 100vw;
   display: flex;
